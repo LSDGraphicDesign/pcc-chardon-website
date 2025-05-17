@@ -8,27 +8,48 @@
   <style>
     body {
       font-family: 'Work Sans', sans-serif;
+      margin: 0;
       background-color: #fff;
       color: #333;
-      margin: 0;
-      padding: 0;
+    }
+    .hero {
+      background-image: url('hero.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 60vh;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-color: rgba(0, 0, 0, 0.6);
+    }
+    .hero h1 {
+      position: relative;
+      z-index: 1;
+      font-size: 3rem;
     }
 
     .nav-container {
       background: #f9f9f9;
       padding: 1rem 2rem;
-      display: flex;
-      justify-content: space-between;
     }
 
     .dropdown {
       position: relative;
+      display: inline-block;
     }
 
     .dropdown-btn {
       background: none;
       border: none;
-      font-weight: bold;
+      font-weight: 700;
       font-size: 1rem;
       cursor: pointer;
     }
@@ -39,10 +60,6 @@
       background-color: white;
       box-shadow: 0 2px 10px rgba(0,0,0,0.1);
       z-index: 1000;
-    }
-
-    .dropdown:hover .dropdown-content {
-      display: block;
     }
 
     .dropdown-content a {
@@ -56,75 +73,65 @@
       background-color: #f0f0f0;
     }
 
-    section {
-      padding: 4rem 2rem;
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    .section {
       display: flex;
       align-items: center;
-      justify-content: center;
-      gap: 3rem;
+      gap: 2rem;
+      margin-bottom: 3rem;
+      flex-wrap: wrap;
     }
 
-    section:nth-of-type(even) {
-      flex-direction: row-reverse;
-      background-color: #f7f7f7;
-    }
-
-    .section-text {
-      max-width: 500px;
-    }
-
-    .section-text h2 {
-      font-family: 'Crimson Text', serif;
-      font-size: 2rem;
-      margin-bottom: 1rem;
-    }
-
-    .section-text p {
-      font-size: 1rem;
-    }
-
-    .section-img img {
+    .section img {
       max-width: 400px;
       border-radius: 10px;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
 
+    .section-content {
+      flex: 1;
+    }
+
+    .section h3 {
+      margin-top: 0;
+      color: #005a87;
+    }
+
     .back-home {
       text-align: center;
-      margin: 3rem 0;
+      margin-top: 2rem;
     }
 
     .back-home a {
       text-decoration: none;
       background: #005a87;
-      color: white;
+      color: #fff;
       padding: 0.75rem 1.5rem;
       border-radius: 5px;
       font-weight: bold;
     }
-
-    footer {
-      background: #222;
-      color: white;
-      text-align: center;
-      padding: 2rem;
-      font-size: 0.9rem;
-    }
-
-    .socials img {
-      width: 24px;
-      margin: 0 8px;
-    }
   </style>
 </head>
 <body>
+  <div class="hero">
+    <h1>Community Outreach</h1>
+  </div>
 
   <div class="nav-container">
     <div class="dropdown">
       <button class="dropdown-btn">Menu ☰</button>
       <div class="dropdown-content">
         <a href="index.html#ouridentity">Our Identity</a>
-        <a href="index.html#visit">Visit</a>
+        <a href="index.html#worship">Worship</a>
         <a href="ministries.html">Ministries</a>
         <a href="music.html">Music Ministry</a>
         <a href="childrens.html">Children’s Education</a>
@@ -138,72 +145,50 @@
     </div>
   </div>
 
-  <section>
-    <div class="section-text">
-      <h2>Scout Troop Sponsor</h2>
-      <p>Pilgrim Christian Church is proud to sponsor a local Boy Scout troop, providing a supportive space for leadership, service, and community-building through scouting values.</p>
+  <div class="container">
+    <div class="section">
+      <img src="scouts.jpg" alt="Scout Troop">
+      <div class="section-content">
+        <h3>Scout Troop Sponsor</h3>
+        <p>PCC proudly supports youth in our community as a sponsor for a local scout troop. We provide meeting space and encourage leadership and character development.</p>
+      </div>
     </div>
-    <div class="section-img">
-      <img src="scouts.jpg" alt="Scout Troop at PCC">
-    </div>
-  </section>
 
-  <section>
-    <div class="section-text">
-      <h2>Alcoholics Anonymous</h2>
-      <p>Our building hosts regular AA meetings, offering a safe and welcoming space for those seeking support and recovery. All are welcome and confidentiality is respected.</p>
+    <div class="section">
+      <img src="aa.jpg" alt="Alcoholics Anonymous">
+      <div class="section-content">
+        <h3>Alcoholics Anonymous</h3>
+        <p>Alcoholics Anonymous holds meetings at PCC each week, offering support and healing in a safe, welcoming environment.</p>
+      </div>
     </div>
-    <div class="section-img">
-      <img src="aa.jpg" alt="AA Meetings at PCC">
-    </div>
-  </section>
 
-  <section>
-    <div class="section-text">
-      <h2>Pancake Breakfast</h2>
-      <p>Each spring, PCC hosts a community Pancake Breakfast during the annual Maple Festival in Chardon. It's a joyful tradition that brings neighbors together over a warm meal.</p>
+    <div class="section">
+      <img src="pancake.jpg" alt="Pancake Breakfast">
+      <div class="section-content">
+        <h3>Pancake Breakfast</h3>
+        <p>Held during Chardon’s annual Maple Festival, our pancake breakfast provides food, fellowship, and fun for all who attend. All are welcome to enjoy the community spirit!</p>
+      </div>
     </div>
-    <div class="section-img">
-      <img src="pancakes.jpg" alt="Pancake Breakfast">
-    </div>
-  </section>
 
-  <section>
-    <div class="section-text">
-      <h2>Chili Dinner</h2>
-      <p>Our annual Chili Dinner provides a hearty meal and warm fellowship on the night of the city’s tree lighting ceremony — a perfect way to kick off the holiday season.</p>
+    <div class="section">
+      <img src="chilidinner.jpg" alt="Chili Dinner">
+      <div class="section-content">
+        <h3>Chili Dinner</h3>
+        <p>Our chili dinner takes place during the city’s tree lighting ceremony, offering warmth and hospitality as the holiday season begins.</p>
+      </div>
     </div>
-    <div class="section-img">
-      <img src="chili.jpg" alt="Chili Dinner at PCC">
-    </div>
-  </section>
 
-  <section>
-    <div class="section-text">
-      <h2>Rummage Sale</h2>
-      <p>The PCC Rummage Sale gives new life to gently used items while raising funds for ministries. It's a fun and eco-friendly way to serve the community and reduce waste.</p>
+    <div class="section">
+      <img src="rummage.jpg" alt="Rummage Sale">
+      <div class="section-content">
+        <h3>Rummage Sale</h3>
+        <p>PCC hosts a seasonal rummage sale featuring donated goods, clothing, and home items. Proceeds support the church’s outreach work and missions.</p>
+      </div>
     </div>
-    <div class="section-img">
-      <img src="rummage.jpg" alt="Rummage Sale at PCC">
-    </div>
-  </section>
 
-  <div class="back-home">
-    <a href="index.html">Return to Home</a>
+    <div class="back-home">
+      <a href="index.html">Return to Home</a>
+    </div>
   </div>
-
-  <footer>
-    <p>&copy; 2025 Pilgrim Christian Church</p>
-    <div class="socials">
-      <a href="https://www.instagram.com/pcc_chardon/" target="_blank"><img src="instagram-icon.png" alt="Instagram"></a>
-      <a href="https://www.facebook.com/PilgrimChristianChurch/videos" target="_blank"><img src="facebook-icon.png" alt="Facebook"></a>
-      <a href="https://www.youtube.com/@pcc_chardon/streams" target="_blank"><img src="youtube-icon.png" alt="YouTube"></a>
-    </div>
-    <div style="margin-top: 1.5rem; display: flex; justify-content: center; gap: 2rem;">
-      <a href="https://www.ucc.org/" target="_blank"><img src="ucc-icon2.png" alt="UCC Logo" style="height: 40px;"></a>
-      <a href="https://disciples.org/" target="_blank"><img src="doc-icon.png" alt="DoC Logo" style="height: 40px;"></a>
-    </div>
-  </footer>
-
 </body>
 </html>
