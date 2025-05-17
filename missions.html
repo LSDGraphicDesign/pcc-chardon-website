@@ -8,44 +8,23 @@
   <style>
     body {
       font-family: 'Work Sans', sans-serif;
-      margin: 0;
       background-color: #fff;
       color: #333;
+      margin: 0;
+      padding: 0;
     }
-    header {
-      background-image: url('hero.jpg');
-      background-size: cover;
-      background-position: center;
-      height: 50vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      color: white;
-      position: relative;
-    }
-    header::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: rgba(0, 0, 0, 0.5);
-      z-index: 0;
-    }
-    header h1 {
-      font-size: 3rem;
-      z-index: 1;
-      position: relative;
-    }
+
     .nav-container {
       background: #f9f9f9;
       padding: 1rem 2rem;
       display: flex;
       justify-content: space-between;
-      align-items: center;
     }
+
     .dropdown {
       position: relative;
     }
+
     .dropdown-btn {
       background: none;
       border: none;
@@ -53,53 +32,85 @@
       font-size: 1rem;
       cursor: pointer;
     }
+
     .dropdown-content {
       display: none;
       position: absolute;
       background-color: white;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
       z-index: 1000;
     }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
     .dropdown-content a {
       display: block;
       padding: 0.5rem 1rem;
       color: #333;
       text-decoration: none;
     }
+
     .dropdown-content a:hover {
-      background-color: #eee;
+      background-color: #f0f0f0;
     }
-    .dropdown:hover .dropdown-content {
-      display: block;
+
+    section {
+      padding: 4rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 3rem;
     }
-    .section {
-      max-width: 900px;
-      margin: auto;
-      padding: 3rem 1rem;
+
+    section:nth-of-type(even) {
+      flex-direction: row-reverse;
+      background-color: #f7f7f7;
     }
-    .section h2 {
-      font-size: 1.8rem;
-      color: #005a87;
-    }
-    .section img {
-      width: 100%;
+
+    .section-text {
       max-width: 500px;
-      border-radius: 10px;
-      margin: 1rem 0;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     }
-    .section p {
+
+    .section-text h2 {
+      font-family: 'Crimson Text', serif;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .section-text p {
       font-size: 1rem;
     }
+
+    .section-img img {
+      max-width: 400px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .back-home {
+      text-align: center;
+      margin: 3rem 0;
+    }
+
+    .back-home a {
+      text-decoration: none;
+      background: #005a87;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
     footer {
-      background-color: #222;
+      background: #222;
       color: white;
       text-align: center;
       padding: 2rem;
+      font-size: 0.9rem;
     }
-    .socials a {
-      text-decoration: none;
-    }
+
     .socials img {
       width: 24px;
       margin: 0 8px;
@@ -107,10 +118,6 @@
   </style>
 </head>
 <body>
-
-  <header>
-    <h1>Missions Ministry</h1>
-  </header>
 
   <div class="nav-container">
     <div class="dropdown">
@@ -120,7 +127,7 @@
         <a href="index.html#visit">Visit</a>
         <a href="ministries.html">Ministries</a>
         <a href="music.html">Music Ministry</a>
-        <a href="children.html">Children’s Education</a>
+        <a href="childrens.html">Children’s Education</a>
         <a href="volunteers.html">Worship Volunteers</a>
         <a href="outreach.html">Community Outreach</a>
         <a href="missions.html">Missions Ministry</a>
@@ -131,40 +138,40 @@
     </div>
   </div>
 
-  <div class="section">
-    <h2>Heifer Fair</h2>
-    <img src="heifer-fair.jpg" alt="Heifer Fair">
-    <p>Our annual Heifer Fair supports Heifer International by raising funds and awareness to combat hunger and poverty through sustainable farming and livestock donations around the world.</p>
-  </div>
+  <section>
+    <div class="section-text">
+      <h2>Heifer Fair</h2>
+      <p>Each year, PCC hosts a Heifer Fair to support Heifer International, helping end hunger and poverty through sustainable agriculture. Kids and families alike enjoy hands-on exhibits and fundraising activities.</p>
+    </div>
+    <div class="section-img">
+      <img src="heifer.jpg" alt="Heifer Fair at PCC">
+    </div>
+  </section>
 
-  <div class="section">
-    <h2>Crop Walk</h2>
-    <img src="crop-walk.jpg" alt="Crop Walk">
-    <p>We participate in the CROP Hunger Walk to support local and global hunger relief efforts. Members of all ages walk to raise awareness and funds to fight food insecurity in our communities and beyond.</p>
+  <section>
+    <div class="section-text">
+      <h2>Crop Walk</h2>
+      <p>We participate in the annual CROP Hunger Walk, joining with churches across the region to raise awareness and funds for global hunger relief and local food programs. Walk with us and make a difference!</p>
+    </div>
+    <div class="section-img">
+      <img src="cropwalk.jpg" alt="Crop Walk">
+    </div>
+  </section>
+
+  <div class="back-home">
+    <a href="index.html">Return to Home</a>
   </div>
 
   <footer>
     <p>&copy; 2025 Pilgrim Christian Church</p>
-
-    <div class="socials" style="margin-top: 1rem;">
-      <a href="https://www.instagram.com/pcc_chardon/" target="_blank">
-        <img src="instagram-icon.png" alt="Instagram">
-      </a>
-      <a href="https://www.facebook.com/PilgrimChristianChurch/videos" target="_blank">
-        <img src="facebook-icon.png" alt="Facebook">
-      </a>
-      <a href="https://www.youtube.com/@pcc_chardon/streams" target="_blank">
-        <img src="youtube-icon.png" alt="YouTube">
-      </a>
+    <div class="socials">
+      <a href="https://www.instagram.com/pcc_chardon/" target="_blank"><img src="instagram-icon.png" alt="Instagram"></a>
+      <a href="https://www.facebook.com/PilgrimChristianChurch/videos" target="_blank"><img src="facebook-icon.png" alt="Facebook"></a>
+      <a href="https://www.youtube.com/@pcc_chardon/streams" target="_blank"><img src="youtube-icon.png" alt="YouTube"></a>
     </div>
-
     <div style="margin-top: 1.5rem; display: flex; justify-content: center; gap: 2rem;">
-      <a href="https://www.ucc.org/" target="_blank" style="text-decoration: none;">
-        <img src="ucc-icon2.png" alt="UCC Logo" style="height: 40px;">
-      </a>
-      <a href="https://disciples.org/" target="_blank" style="text-decoration: none;">
-        <img src="doc-icon.png" alt="DoC Logo" style="height: 40px;">
-      </a>
+      <a href="https://www.ucc.org/" target="_blank"><img src="ucc-icon2.png" alt="UCC Logo" style="height: 40px;"></a>
+      <a href="https://disciples.org/" target="_blank"><img src="doc-icon.png" alt="DoC Logo" style="height: 40px;"></a>
     </div>
   </footer>
 
