@@ -35,17 +35,14 @@
       z-index: 1;
       font-size: 3rem;
     }
-
     .nav-container {
       background: #f9f9f9;
       padding: 1rem 2rem;
     }
-
     .dropdown {
       position: relative;
       display: inline-block;
     }
-
     .dropdown-btn {
       background: none;
       border: none;
@@ -53,7 +50,6 @@
       font-size: 1rem;
       cursor: pointer;
     }
-
     .dropdown-content {
       display: none;
       position: absolute;
@@ -61,28 +57,23 @@
       box-shadow: 0 2px 10px rgba(0,0,0,0.1);
       z-index: 1000;
     }
-
     .dropdown-content a {
       display: block;
       padding: 0.5rem 1rem;
       color: #333;
       text-decoration: none;
     }
-
     .dropdown-content a:hover {
       background-color: #f0f0f0;
     }
-
     .dropdown:hover .dropdown-content {
       display: block;
     }
-
     .container {
       max-width: 1000px;
       margin: auto;
       padding: 2rem;
     }
-
     .section {
       display: flex;
       align-items: center;
@@ -90,27 +81,22 @@
       margin-bottom: 3rem;
       flex-wrap: wrap;
     }
-
     .section img {
       max-width: 400px;
       border-radius: 10px;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
-
     .section-content {
       flex: 1;
     }
-
     .section h3 {
       margin-top: 0;
       color: #005a87;
     }
-
     .back-home {
       text-align: center;
       margin-top: 2rem;
     }
-
     .back-home a {
       text-decoration: none;
       background: #005a87;
@@ -119,13 +105,28 @@
       border-radius: 5px;
       font-weight: bold;
     }
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+    }
+    .socials a {
+      margin: 0 10px;
+      display: inline-block;
+    }
+    .socials img {
+      width: 24px;
+      height: 24px;
+      vertical-align: middle;
+    }
   </style>
 </head>
 <body>
   <div class="hero">
     <h1>Missions Ministry</h1>
   </div>
-
   <div class="nav-container">
     <div class="dropdown">
       <button class="dropdown-btn">Menu ☰</button>
@@ -144,7 +145,6 @@
       </div>
     </div>
   </div>
-
   <div class="container">
     <div class="section">
       <img src="heifer.jpg" alt="Heifer Fair">
@@ -153,7 +153,6 @@
         <p>Each year we raise funds through our Heifer Fair to support Heifer International, helping to provide animals, training, and resources to communities in need around the world.</p>
       </div>
     </div>
-
     <div class="section">
       <img src="cropwalk.jpg" alt="Crop Walk">
       <div class="section-content">
@@ -161,10 +160,31 @@
         <p>PCC participates in the CROP Hunger Walk, raising awareness and funds to fight hunger locally and globally. Join our team and help us take steps toward a more food-secure future.</p>
       </div>
     </div>
-
     <div class="back-home">
       <a href="index.html">Return to Home</a>
     </div>
   </div>
+  <footer>
+    <p>&copy; 2025 Pilgrim Christian Church</p>
+    <div class="socials" style="margin-top: 1rem; text-align: center;">
+      <a href="https://www.instagram.com/pcc_chardon/" target="_blank" style="text-decoration: none;">
+        <img src="instagram-icon.png" alt="Instagram" style="width: 25px; height: 25px; margin: 0 10px;">
+      </a>
+      <a href="https://www.facebook.com/PilgrimChristianChurch/videos" target="_blank" style="text-decoration: none;">
+        <img src="facebook-icon.png" alt="Facebook" style="width: 25px; height: 25px; margin: 0 10px;">
+      </a>
+      <a href="https://www.youtube.com/@pcc_chardon/streams" target="_blank" style="text-decoration: none;">
+        <img src="youtube-icon.png" alt="YouTube" style="width: 25px; height: 25px; margin: 0 10px;">
+      </a>
+    </div>
+    <div style="margin-top: 1.5rem; display: flex; justify-content: center; gap: 2rem;">
+      <a href="https://www.ucc.org/" target="_blank" style="text-decoration: none;">
+        <img src="ucc-icon2.png" alt="UCC Logo" style="height: 40px;">
+      </a>
+      <a href="https://disciples.org/" target="_blank" style="text-decoration: none;">
+        <img src="doc-icon.png" alt="DoC Logo" style="height: 40px;">
+      </a>
+    </div>
+  </footer>
 </body>
 </html>
