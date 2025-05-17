@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Children’s Education | Pilgrim Christian Church</title>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Work+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Work Sans', sans-serif;
+      background-color: #fff;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav-container {
+      background: #f9f9f9;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .dropdown {
+      position: relative;
+    }
+
+    .dropdown-btn {
+      background: none;
+      border: none;
+      font-weight: bold;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: white;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      z-index: 1000;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .dropdown-content a {
+      display: block;
+      padding: 0.5rem 1rem;
+      color: #333;
+      text-decoration: none;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #f0f0f0;
+    }
+
+    section {
+      padding: 4rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 3rem;
+    }
+
+    section:nth-of-type(even) {
+      flex-direction: row-reverse;
+      background-color: #f7f7f7;
+    }
+
+    .section-text {
+      max-width: 500px;
+    }
+
+    .section-text h2 {
+      font-family: 'Crimson Text', serif;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .section-text p {
+      font-size: 1rem;
+    }
+
+    .section-img img {
+      max-width: 400px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .back-home {
+      text-align: center;
+      margin: 3rem 0;
+    }
+
+    .back-home a {
+      text-decoration: none;
+      background: #005a87;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+    }
+
+    .socials img {
+      width: 24px;
+      margin: 0 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="nav-container">
+    <div class="dropdown">
+      <button class="dropdown-btn">Menu ☰</button>
+      <div class="dropdown-content">
+        <a href="index.html#ouridentity">Our Identity</a>
+        <a href="index.html#visit">Visit</a>
+        <a href="ministries.html">Ministries</a>
+        <a href="music.html">Music Ministry</a>
+        <a href="childrens.html">Children’s Education</a>
+        <a href="volunteers.html">Worship Volunteers</a>
+        <a href="outreach.html">Community Outreach</a>
+        <a href="missions.html">Missions Ministry</a>
+        <a href="summer.html">Summer Worship Series</a>
+        <a href="giving.html">Giving</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </div>
+
+  <section>
+    <div class="section-text">
+      <h2>Youth Group</h2>
+      <p>Our Youth Group empowers young people to grow in faith, build friendships, and serve the community. Activities include service projects, Bible discussions, and fun events throughout the year.</p>
+    </div>
+    <div class="section-img">
+      <img src="youth.jpg" alt="Youth Group">
+    </div>
+  </section>
+
+  <section>
+    <div class="section-text">
+      <h2>Sunday School</h2>
+      <p>Sunday School at PCC welcomes children of all ages to learn about God’s love in a nurturing and joyful environment. Classes are held weekly during worship and led by caring volunteers.</p>
+    </div>
+    <div class="section-img">
+      <img src="sundayschool.jpg" alt="Sunday School">
+    </div>
+  </section>
+
+  <div class="back-home">
+    <a href="index.html">Return to Home</a>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Pilgrim Christian Church</p>
+    <div class="socials">
+      <a href="https://www.instagram.com/pcc_chardon/" target="_blank"><img src="instagram-icon.png" alt="Instagram"></a>
+      <a href="https://www.facebook.com/PilgrimChristianChurch/videos" target="_blank"><img src="facebook-icon.png" alt="Facebook"></a>
+      <a href="https://www.youtube.com/@pcc_chardon/streams" target="_blank"><img src="youtube-icon.png" alt="YouTube"></a>
+    </div>
+    <div style="margin-top: 1.5rem; display: flex; justify-content: center; gap: 2rem;">
+      <a href="https://www.ucc.org/" target="_blank"><img src="ucc-icon2.png" alt="UCC Logo" style="height: 40px;"></a>
+      <a href="https://disciples.org/" target="_blank"><img src="doc-icon.png" alt="DoC Logo" style="height: 40px;"></a>
+    </div>
+  </footer>
+
+</body>
+</html>
