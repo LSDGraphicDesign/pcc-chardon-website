@@ -7,9 +7,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Work+Sans:wght@300;400;600&display=swap" rel="stylesheet">
   <style>
     .socials a {
-  text-decoration: none;
-  display: inline-block;
-}
+      text-decoration: none;
+      display: inline-block;
+    }
     html { scroll-behavior: smooth; }
     body {
       font-family: 'Work Sans', sans-serif;
@@ -43,6 +43,7 @@
     header h1 {
       font-size: 3rem;
       z-index: 1;
+      position: relative;
     }
 
     .nav-container {
@@ -50,10 +51,12 @@
       padding: 1rem 2rem;
       text-align: left;
     }
+
     .dropdown {
       position: relative;
       display: inline-block;
     }
+
     .dropdown-btn {
       background: none;
       border: none;
@@ -61,6 +64,7 @@
       font-size: 1rem;
       cursor: pointer;
     }
+
     .dropdown-content {
       display: none;
       position: absolute;
@@ -68,15 +72,18 @@
       box-shadow: 0 2px 10px rgba(0,0,0,0.1);
       z-index: 1000;
     }
+
     .dropdown-content a {
       display: block;
       padding: 0.5rem 1rem;
       color: #333;
       text-decoration: none;
     }
+
     .dropdown-content a:hover {
       background-color: #f0f0f0;
     }
+
     .dropdown:hover .dropdown-content {
       display: block;
     }
@@ -155,15 +162,21 @@
       <button class="dropdown-btn">Menu ☰</button>
       <div class="dropdown-content">
         <a href="index.html#ouridentity">Our Identity</a>
-        <a href="index.html#visit">Visit</a>
+        <a href="index.html#worship">Worship</a>
         <a href="ministries.html">Ministries</a>
+        <a href="music.html">Music Ministry</a>
+        <a href="childrens.html">Children’s Education</a>
+        <a href="volunteers.html">Worship Volunteers</a>
+        <a href="outreach.html">Community Outreach</a>
+        <a href="missions.html">Missions Ministry</a>
+        <a href="summer.html">Summer Worship Series</a>
+        <a href="giving.html">Giving</a>
         <a href="contact.html">Contact</a>
       </div>
     </div>
   </div>
 
   <div class="container">
-
     <div class="ministry">
       <img src="peace-cranes.jpg" alt="Peace Crane Ministry">
       <div class="ministry-content">
@@ -172,7 +185,7 @@
       </div>
     </div>
 
-   <div class="ministry">
+    <div class="ministry">
       <img src="ida-cupboard.jpg" alt="Ida's Pantry">
       <div class="ministry-content">
         <h3>Ida's Pantry</h3>
@@ -196,29 +209,27 @@
     </div>
   </div>
 
-<footer>
-  <p>&copy; 2025 Pilgrim Christian Church</p>
-
-  <div class="socials" style="margin-top: 1rem; text-align: center;">
-    <a href="https://www.instagram.com/pcc_chardon/" target="_blank" style="text-decoration: none;">
-      <img src="instagram-icon.png" alt="Instagram" style="width: 25px; height: 25px; margin: 0 10px;">
-    </a>
-    <a href="https://www.facebook.com/PilgrimChristianChurch/videos" target="_blank" style="text-decoration: none;">
-      <img src="facebook-icon.png" alt="Facebook" style="width: 25px; height: 25px; margin: 0 10px;">
-    </a>
-    <a href="https://www.youtube.com/@pcc_chardon/streams" target="_blank" style="text-decoration: none;">
-      <img src="youtube-icon.png" alt="YouTube" style="width: 25px; height: 25px; margin: 0 10px;">
-    </a>
-  </div>
-
-  <div style="margin-top: 1.5rem; display: flex; justify-content: center; gap: 2rem;">
-    <a href="https://www.ucc.org/" target="_blank" style="text-decoration: none;">
-      <img src="ucc-icon2.png" alt="UCC Logo" style="height: 40px;">
-    </a>
-    <a href="https://disciples.org/" target="_blank" style="text-decoration: none;">
-      <img src="doc-icon.png" alt="DoC Logo" style="height: 40px;">
-    </a>
-  </div>
-</footer>
+  <footer>
+    <p>&copy; 2025 Pilgrim Christian Church</p>
+    <div class="socials" style="margin-top: 1rem; text-align: center;">
+      <a href="https://www.instagram.com/pcc_chardon/" target="_blank" style="text-decoration: none;">
+        <img src="instagram-icon.png" alt="Instagram" style="width: 25px; height: 25px; margin: 0 10px;">
+      </a>
+      <a href="https://www.facebook.com/PilgrimChristianChurch/videos" target="_blank" style="text-decoration: none;">
+        <img src="facebook-icon.png" alt="Facebook" style="width: 25px; height: 25px; margin: 0 10px;">
+      </a>
+      <a href="https://www.youtube.com/@pcc_chardon/streams" target="_blank" style="text-decoration: none;">
+        <img src="youtube-icon.png" alt="YouTube" style="width: 25px; height: 25px; margin: 0 10px;">
+      </a>
+    </div>
+    <div style="margin-top: 1.5rem; display: flex; justify-content: center; gap: 2rem;">
+      <a href="https://www.ucc.org/" target="_blank" style="text-decoration: none;">
+        <img src="ucc-icon2.png" alt="UCC Logo" style="height: 40px;">
+      </a>
+      <a href="https://disciples.org/" target="_blank" style="text-decoration: none;">
+        <img src="doc-icon.png" alt="DoC Logo" style="height: 40px;">
+      </a>
+    </div>
+  </footer>
 </body>
 </html>
