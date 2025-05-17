@@ -8,27 +8,48 @@
   <style>
     body {
       font-family: 'Work Sans', sans-serif;
+      margin: 0;
       background-color: #fff;
       color: #333;
-      margin: 0;
-      padding: 0;
+    }
+    .hero {
+      background-image: url('hero.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 60vh;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-color: rgba(0, 0, 0, 0.6);
+    }
+    .hero h1 {
+      position: relative;
+      z-index: 1;
+      font-size: 3rem;
     }
 
     .nav-container {
       background: #f9f9f9;
       padding: 1rem 2rem;
-      display: flex;
-      justify-content: space-between;
     }
 
     .dropdown {
       position: relative;
+      display: inline-block;
     }
 
     .dropdown-btn {
       background: none;
       border: none;
-      font-weight: bold;
+      font-weight: 700;
       font-size: 1rem;
       cursor: pointer;
     }
@@ -39,10 +60,6 @@
       background-color: white;
       box-shadow: 0 2px 10px rgba(0,0,0,0.1);
       z-index: 1000;
-    }
-
-    .dropdown:hover .dropdown-content {
-      display: block;
     }
 
     .dropdown-content a {
@@ -56,75 +73,65 @@
       background-color: #f0f0f0;
     }
 
-    section {
-      padding: 4rem 2rem;
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    .section {
       display: flex;
       align-items: center;
-      justify-content: center;
-      gap: 3rem;
+      gap: 2rem;
+      margin-bottom: 3rem;
+      flex-wrap: wrap;
     }
 
-    section:nth-of-type(even) {
-      flex-direction: row-reverse;
-      background-color: #f7f7f7;
-    }
-
-    .section-text {
-      max-width: 500px;
-    }
-
-    .section-text h2 {
-      font-family: 'Crimson Text', serif;
-      font-size: 2rem;
-      margin-bottom: 1rem;
-    }
-
-    .section-text p {
-      font-size: 1rem;
-    }
-
-    .section-img img {
+    .section img {
       max-width: 400px;
       border-radius: 10px;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
 
+    .section-content {
+      flex: 1;
+    }
+
+    .section h3 {
+      margin-top: 0;
+      color: #005a87;
+    }
+
     .back-home {
       text-align: center;
-      margin: 3rem 0;
+      margin-top: 2rem;
     }
 
     .back-home a {
       text-decoration: none;
       background: #005a87;
-      color: white;
+      color: #fff;
       padding: 0.75rem 1.5rem;
       border-radius: 5px;
       font-weight: bold;
     }
-
-    footer {
-      background: #222;
-      color: white;
-      text-align: center;
-      padding: 2rem;
-      font-size: 0.9rem;
-    }
-
-    .socials img {
-      width: 24px;
-      margin: 0 8px;
-    }
   </style>
 </head>
 <body>
+  <div class="hero">
+    <h1>Summer Worship Series</h1>
+  </div>
 
   <div class="nav-container">
     <div class="dropdown">
       <button class="dropdown-btn">Menu ☰</button>
       <div class="dropdown-content">
         <a href="index.html#ouridentity">Our Identity</a>
-        <a href="index.html#visit">Visit</a>
+        <a href="index.html#worship">Worship</a>
         <a href="ministries.html">Ministries</a>
         <a href="music.html">Music Ministry</a>
         <a href="childrens.html">Children’s Education</a>
@@ -138,62 +145,42 @@
     </div>
   </div>
 
-  <section>
-    <div class="section-text">
-      <h2>Polka Sunday</h2>
-      <p>Polka Sunday is a beloved outdoor service held at Big Creek Park, featuring joyful worship and music from the world-famous Chardon Polka Band! It’s a fun, faith-filled celebration you won’t want to miss.</p>
+  <div class="container">
+    <div class="section">
+      <img src="polka.jpg" alt="Polka Sunday">
+      <div class="section-content">
+        <h3>Polka Sunday</h3>
+        <p>Polka Sunday is a special service held each summer at Big Creek Park, with joyful music provided by the world-famous Chardon Polka Band. Join us for worship outdoors with dancing, music, and laughter!</p>
+      </div>
     </div>
-    <div class="section-img">
-      <img src="polka.jpg" alt="Polka Sunday at Big Creek Park">
-    </div>
-  </section>
 
-  <section>
-    <div class="section-text">
-      <h2>Mountain Run Station Worship</h2>
-      <p>Each summer, we gather at Mountain Run Station for an informal outdoor worship service. Surrounded by nature, this special gathering brings peace, community, and connection with God’s creation.</p>
+    <div class="section">
+      <img src="mountain.jpg" alt="Mountain Run Station">
+      <div class="section-content">
+        <h3>Mountain Run Station Worship</h3>
+        <p>Enjoy a relaxed outdoor worship experience at the scenic Mountain Run Station. This service brings together nature, scripture, and community.</p>
+      </div>
     </div>
-    <div class="section-img">
-      <img src="mountainrun.jpg" alt="Worship at Mountain Run Station">
-    </div>
-  </section>
 
-  <section>
-    <div class="section-text">
-      <h2>Church Picnic</h2>
-      <p>The PCC Church Picnic brings everyone together with food, games, music, and memories. It’s a time to relax, laugh, and enjoy the spirit of fellowship outside the sanctuary.</p>
-    </div>
-    <div class="section-img">
+    <div class="section">
       <img src="picnic.jpg" alt="Church Picnic">
+      <div class="section-content">
+        <h3>Church Picnic</h3>
+        <p>Our church picnic features great food, fellowship, and games for all ages. It’s a time to celebrate summer and deepen our church family bonds.</p>
+      </div>
     </div>
-  </section>
 
-  <section>
-    <div class="section-text">
-      <h2>Ice Cream Social</h2>
-      <p>We close out the summer with our sweet and simple Ice Cream Social. It’s a cool way to connect with neighbors and church family while enjoying delicious frozen treats.</p>
-    </div>
-    <div class="section-img">
+    <div class="section">
       <img src="icecream.jpg" alt="Ice Cream Social">
+      <div class="section-content">
+        <h3>Ice Cream Social</h3>
+        <p>Cool off with delicious ice cream and warm community. Our ice cream social is a summer tradition that brings smiles and sweet treats for everyone!</p>
+      </div>
     </div>
-  </section>
 
-  <div class="back-home">
-    <a href="index.html">Return to Home</a>
+    <div class="back-home">
+      <a href="index.html">Return to Home</a>
+    </div>
   </div>
-
-  <footer>
-    <p>&copy; 2025 Pilgrim Christian Church</p>
-    <div class="socials">
-      <a href="https://www.instagram.com/pcc_chardon/" target="_blank"><img src="instagram-icon.png" alt="Instagram"></a>
-      <a href="https://www.facebook.com/PilgrimChristianChurch/videos" target="_blank"><img src="facebook-icon.png" alt="Facebook"></a>
-      <a href="https://www.youtube.com/@pcc_chardon/streams" target="_blank"><img src="youtube-icon.png" alt="YouTube"></a>
-    </div>
-    <div style="margin-top: 1.5rem; display: flex; justify-content: center; gap: 2rem;">
-      <a href="https://www.ucc.org/" target="_blank"><img src="ucc-icon2.png" alt="UCC Logo" style="height: 40px;"></a>
-      <a href="https://disciples.org/" target="_blank"><img src="doc-icon.png" alt="DoC Logo" style="height: 40px;"></a>
-    </div>
-  </footer>
-
 </body>
 </html>
