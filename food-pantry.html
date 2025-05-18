@@ -81,6 +81,9 @@
       margin-bottom: 3rem;
       flex-wrap: wrap;
     }
+    .section:nth-of-type(even) {
+      flex-direction: row-reverse;
+    }
     .section img {
       max-width: 400px;
       border-radius: 10px;
@@ -122,7 +125,7 @@
     <h1>Food Pantry</h1>
   </div>
 
-  <div class="nav-bar">
+  <div class="nav-container">
     <div class="dropdown">
       <button class="dropdown-btn">Menu ☰</button>
       <div class="dropdown-content">
@@ -153,7 +156,6 @@
       </div>
     </div>
 
-    <!-- NEW IMAGE SECTION -->
     <div class="section">
       <img src="ida-cupboard2.jpg" alt="Pantry Shelves and Volunteers">
       <div class="section-content">
