@@ -83,6 +83,9 @@
       margin-bottom: 3rem;
       flex-wrap: wrap;
     }
+    .section:nth-of-type(even) {
+      flex-direction: row-reverse;
+    }
     .section img {
       max-width: 400px;
       border-radius: 10px;
@@ -129,24 +132,26 @@
   <div class="hero">
     <h1>Peace Crane Ministry</h1>
   </div>
-  <div class="nav-bar">
-   <div class="dropdown">
-  <button class="dropdown-btn">Menu ☰</button>
-  <div class="dropdown-content">
-    <a href="index.html">Home</a>
-    <a href="food-pantry.html">Food Pantry</a>
-    <a href="peacecrane.html">Peace Crane Ministry</a>
-    <a href="music.html">Music Ministry</a>
-    <a href="childrens.html">Children’s Education</a>
-    <a href="volunteers.html">Worship Volunteers</a>
-    <a href="outreach.html">Community Outreach</a>
-    <a href="missions.html">Missions Ministry</a>
-    <a href="summer.html">Summer Worship Series</a>
-    <a href="giving.html">Giving</a>
-    <a href="contact.html">Contact</a>
+
+  <div class="nav-container">
+    <div class="dropdown">
+      <button class="dropdown-btn">Menu ☰</button>
+      <div class="dropdown-content">
+        <a href="index.html">Home</a>
+        <a href="food-pantry.html">Food Pantry</a>
+        <a href="peacecrane.html">Peace Crane Ministry</a>
+        <a href="music.html">Music Ministry</a>
+        <a href="childrens.html">Children’s Education</a>
+        <a href="volunteers.html">Worship Volunteers</a>
+        <a href="outreach.html">Community Outreach</a>
+        <a href="missions.html">Missions Ministry</a>
+        <a href="summer.html">Summer Worship Series</a>
+        <a href="giving.html">Giving</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
   </div>
-</div>
-  </div>
+
   <div class="container">
     <div class="section">
       <img src="peace-cranes.jpg" alt="Peace Crane">
@@ -156,10 +161,21 @@
         <p>Peace Cranes are displayed locally and shared with organizations around the world in moments of solidarity and support. Whether you’re folding with a group or reflecting quietly alone, every crane becomes a prayer with wings.</p>
       </div>
     </div>
+
+    <!-- NEW IMAGE SECTION -->
+    <div class="section">
+      <img src="peace-cranes2.jpg" alt="Peace Cranes Display">
+      <div class="section-content">
+        <h3>Community Displays</h3>
+        <p>Our Peace Crane Ministry installations can be found in schools, nursing homes, libraries, and churches—each one a tapestry of color and care that invites deeper reflection on peace and unity.</p>
+      </div>
+    </div>
+
     <div class="back-home">
       <a href="index.html">Return to Home</a>
     </div>
   </div>
+
   <footer>
     <p>&copy; 2025 Pilgrim Christian Church</p>
     <div class="socials" style="margin-top: 1rem; text-align: center;">
