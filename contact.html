@@ -83,8 +83,30 @@
 
     main {
       padding: 4rem 2rem;
-      max-width: 700px;
+      max-width: 1000px;
       margin: auto;
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+      align-items: flex-start;
+    }
+
+    .contact-text {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .contact-image {
+      flex: 1;
+      min-width: 300px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .contact-image img {
+      max-width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
 
     footer {
@@ -107,39 +129,45 @@
   </header>
 
   <div class="nav-bar">
-   <div class="dropdown">
-  <button class="dropdown-btn">Menu ☰</button>
-  <div class="dropdown-content">
-    <a href="index.html">Home</a>
-    <a href="food-pantry.html">Food Pantry</a>
-    <a href="peacecrane.html">Peace Crane Ministry</a>
-    <a href="music.html">Music Ministry</a>
-    <a href="childrens.html">Children’s Education</a>
-    <a href="volunteers.html">Worship Volunteers</a>
-    <a href="outreach.html">Community Outreach</a>
-    <a href="missions.html">Missions Ministry</a>
-    <a href="summer.html">Summer Worship Series</a>
-    <a href="giving.html">Giving</a>
-    <a href="contact.html">Contact</a>
-  </div>
-</div>
+    <div class="dropdown">
+      <button class="dropdown-btn">Menu ☰</button>
+      <div class="dropdown-content">
+        <a href="index.html">Home</a>
+        <a href="food-pantry.html">Food Pantry</a>
+        <a href="peacecrane.html">Peace Crane Ministry</a>
+        <a href="music.html">Music Ministry</a>
+        <a href="childrens.html">Children’s Education</a>
+        <a href="volunteers.html">Worship Volunteers</a>
+        <a href="outreach.html">Community Outreach</a>
+        <a href="missions.html">Missions Ministry</a>
+        <a href="summer.html">Summer Worship Series</a>
+        <a href="giving.html">Giving</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
   </div>
 
   <main>
-    <h2>Whoever you are, and wherever you are on life's journey, you're welcome here. We'd love to hear from you.</h2>
-    <p><strong>Email:</strong> admin@pcc-chardon.org</p>
-    <p><strong>Phone:</strong> (440) 285-8791</p>
+    <div class="contact-text">
+      <h2>Whoever you are, and wherever you are on life's journey, you're welcome here. We'd love to hear from you.</h2>
+      <p><strong>Email:</strong> admin@pcc-chardon.org</p>
+      <p><strong>Phone:</strong> (440) 285-8791</p>
 
-    <div class="socials" style="text-align: center; margin-top: 1rem;">
-      <a href="https://www.instagram.com/pcc_chardon/" target="_blank" style="text-decoration: none;">
-        <img src="instagram1.png" alt="Instagram" style="width: 24px; height: 24px; margin: 0 10px;">
-      </a>
-      <a href="https://www.facebook.com/PilgrimChristianChurch/videos" target="_blank" style="text-decoration: none;">
-        <img src="facebook1.png" alt="Facebook" style="width: 24px; height: 24px; margin: 0 10px;">
-      </a>
-      <a href="https://www.youtube.com/@pcc_chardon/streams" target="_blank" style="text-decoration: none;">
-        <img src="youtube1.png" alt="YouTube" style="width: 24px; height: 24px; margin: 0 10px;">
-      </a>
+      <div class="socials" style="text-align: center; margin-top: 1rem;">
+        <a href="https://www.instagram.com/pcc_chardon/" target="_blank" style="text-decoration: none;">
+          <img src="instagram1.png" alt="Instagram" style="width: 24px; height: 24px; margin: 0 10px;">
+        </a>
+        <a href="https://www.facebook.com/PilgrimChristianChurch/videos" target="_blank" style="text-decoration: none;">
+          <img src="facebook1.png" alt="Facebook" style="width: 24px; height: 24px; margin: 0 10px;">
+        </a>
+        <a href="https://www.youtube.com/@pcc_chardon/streams" target="_blank" style="text-decoration: none;">
+          <img src="youtube1.png" alt="YouTube" style="width: 24px; height: 24px; margin: 0 10px;">
+        </a>
+      </div>
+    </div>
+
+    <div class="contact-image">
+      <img src="contact-room.jpg" alt="Church Office or Contact Room">
     </div>
   </main>
 
