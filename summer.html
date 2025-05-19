@@ -85,12 +85,14 @@
       flex-direction: row-reverse;
     }
     .section img {
-      max-width: 400px;
+      max-width: 100%;
+      width: 100%;
+      height: auto;
       border-radius: 10px;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
     .section-content {
-      flex: 1;
+      flex: 1 1 400px;
     }
     .section h3 {
       margin-top: 0;
@@ -123,6 +125,16 @@
       width: 24px;
       margin: 0 10px;
     }
+    @media (max-width: 768px) {
+      .section {
+        flex-direction: column !important;
+        text-align: center;
+      }
+      .section img {
+        width: 100%;
+        margin-bottom: 1rem;
+      }
+    }
   </style>
 </head>
 <body>
@@ -130,7 +142,7 @@
     <h1>Summer Worship Series</h1>
   </div>
 
-  <div class="nav-bar">
+  <div class="nav-container">
     <div class="dropdown">
       <button class="dropdown-btn">Menu ☰</button>
       <div class="dropdown-content">
@@ -203,4 +215,3 @@
   </footer>
 </body>
 </html>
-
