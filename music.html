@@ -111,10 +111,10 @@
     .section {
       display: flex;
       align-items: center;
-      justify-content: center;
-      gap: 3rem;
-      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 2rem;
       margin-bottom: 3rem;
+      flex-wrap: nowrap;
     }
 
     .section:nth-of-type(even) {
@@ -122,7 +122,9 @@
     }
 
     .section img {
-      max-width: 400px;
+      width: 400px;
+      max-width: 100%;
+      height: auto;
       border-radius: 10px;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
@@ -134,6 +136,7 @@
 
     .section h3 {
       color: #005a87;
+      margin-top: 0;
     }
 
     .back-home {
@@ -168,6 +171,21 @@
       height: 25px;
       vertical-align: middle;
     }
+
+    @media (max-width: 768px) {
+      .section {
+        flex-direction: column !important;
+        text-align: center;
+      }
+
+      .section img {
+        width: 100%;
+      }
+
+      .section-text {
+        width: 100%;
+      }
+    }
   </style>
 </head>
 <body>
@@ -175,23 +193,23 @@
     <h1>Music Ministry</h1>
   </div>
 
- <div class="nav-bar">
-   <div class="dropdown">
-  <button class="dropdown-btn">Menu ☰</button>
-  <div class="dropdown-content">
-    <a href="index.html">Home</a>
-    <a href="food-pantry.html">Food Pantry</a>
-    <a href="peacecrane.html">Peace Crane Ministry</a>
-    <a href="music.html">Music Ministry</a>
-    <a href="childrens.html">Children’s Education</a>
-    <a href="volunteers.html">Worship Volunteers</a>
-    <a href="outreach.html">Community Outreach</a>
-    <a href="missions.html">Missions Ministry</a>
-    <a href="summer.html">Summer Worship Series</a>
-    <a href="giving.html">Giving</a>
-    <a href="contact.html">Contact</a>
-  </div>
-</div>
+  <div class="nav-bar">
+    <div class="dropdown">
+      <button class="dropdown-btn">Menu ☰</button>
+      <div class="dropdown-content">
+        <a href="index.html">Home</a>
+        <a href="food-pantry.html">Food Pantry</a>
+        <a href="peacecrane.html">Peace Crane Ministry</a>
+        <a href="music.html">Music Ministry</a>
+        <a href="childrens.html">Children’s Education</a>
+        <a href="volunteers.html">Worship Volunteers</a>
+        <a href="outreach.html">Community Outreach</a>
+        <a href="missions.html">Missions Ministry</a>
+        <a href="summer.html">Summer Worship Series</a>
+        <a href="giving.html">Giving</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
     <div class="logo-links">
       <a href="https://www.ucc.org/" target="_blank">
         <img src="ucc-icon.jpg" alt="UCC Logo">
