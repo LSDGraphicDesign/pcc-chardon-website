@@ -39,7 +39,7 @@
       font-size: 3rem;
     }
 
-    .nav-container {
+    .nav-bar {
       background: #f9f9f9;
       padding: 1rem 2rem;
     }
@@ -99,18 +99,20 @@
     }
 
     .section img {
-      max-width: 400px;
+      max-width: 100%;
+      width: 100%;
+      height: auto;
       border-radius: 10px;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
 
     .section-content {
-      flex: 1;
+      flex: 1 1 400px;
     }
 
     .section h3 {
-      margin-top: 0;
       color: #005a87;
+      margin-top: 0;
     }
 
     .back-home {
@@ -147,20 +149,14 @@
     }
 
     @media (max-width: 768px) {
-      .section,
-      .section.reverse {
+      .section {
         flex-direction: column !important;
         text-align: center;
       }
 
       .section img {
         width: 100%;
-        max-width: 100%;
         margin-bottom: 1rem;
-      }
-
-      .section-content {
-        width: 100%;
       }
     }
   </style>
@@ -170,7 +166,7 @@
     <h1>Community Outreach</h1>
   </div>
 
-  <div class="nav-container">
+  <div class="nav-bar">
     <div class="dropdown">
       <button class="dropdown-btn">Menu ☰</button>
       <div class="dropdown-content">
@@ -223,11 +219,11 @@
     </div>
 
     <div class="section">
+      <img src="rummage.jpg" alt="Rummage Sale">
       <div class="section-content">
         <h3>Rummage Sale</h3>
         <p>PCC hosts a seasonal rummage sale featuring donated goods, clothing, and home items. Proceeds support the church’s outreach work and missions.</p>
       </div>
-      <img src="rummage.jpg" alt="Rummage Sale">
     </div>
 
     <div class="back-home">
@@ -238,21 +234,21 @@
   <footer>
     <p>&copy; 2025 Pilgrim Christian Church</p>
     <div class="socials" style="margin-top: 1rem; text-align: center;">
-      <a href="https://www.instagram.com/pcc_chardon/" target="_blank" style="text-decoration: none;">
+      <a href="https://www.instagram.com/pcc_chardon/" target="_blank">
         <img src="instagram-icon.png" alt="Instagram">
       </a>
-      <a href="https://www.facebook.com/PilgrimChristianChurch/videos" target="_blank" style="text-decoration: none;">
+      <a href="https://www.facebook.com/PilgrimChristianChurch/videos" target="_blank">
         <img src="facebook-icon.png" alt="Facebook">
       </a>
-      <a href="https://www.youtube.com/@pcc_chardon/streams" target="_blank" style="text-decoration: none;">
+      <a href="https://www.youtube.com/@pcc_chardon/streams" target="_blank">
         <img src="youtube-icon.png" alt="YouTube">
       </a>
     </div>
     <div style="margin-top: 1.5rem; display: flex; justify-content: center; gap: 2rem;">
-      <a href="https://www.ucc.org/" target="_blank" style="text-decoration: none;">
+      <a href="https://www.ucc.org/" target="_blank">
         <img src="ucc-icon2.png" alt="UCC Logo" style="height: 40px;">
       </a>
-      <a href="https://disciples.org/" target="_blank" style="text-decoration: none;">
+      <a href="https://disciples.org/" target="_blank">
         <img src="doc-icon.png" alt="DoC Logo" style="height: 40px;">
       </a>
     </div>
