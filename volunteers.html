@@ -40,7 +40,7 @@
       font-size: 3rem;
     }
 
-    .nav-container {
+    .nav-bar {
       background: #f9f9f9;
       padding: 1rem 2rem;
       text-align: left;
@@ -101,13 +101,14 @@
     }
 
     .section img {
-      max-width: 400px;
+      max-width: 100%;
+      height: auto;
       border-radius: 10px;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
 
     .section-content {
-      flex: 1;
+      flex: 1 1 400px;
     }
 
     .section h3 {
@@ -153,9 +154,15 @@
         flex-direction: column !important;
         text-align: center;
       }
+
       .section img {
         width: 100%;
+        max-width: 100%;
         margin-bottom: 1rem;
+      }
+
+      .section-content {
+        width: 100%;
       }
     }
   </style>
@@ -166,22 +173,22 @@
   </div>
 
   <div class="nav-bar">
- <div class="dropdown">
-  <button class="dropdown-btn">Menu ☰</button>
-  <div class="dropdown-content">
-    <a href="index.html">Home</a>
-    <a href="food-pantry.html">Food Pantry</a>
-    <a href="peacecrane.html">Peace Crane Ministry</a>
-    <a href="music.html">Music Ministry</a>
-    <a href="childrens.html">Children’s Education</a>
-    <a href="volunteers.html">Worship Volunteers</a>
-    <a href="outreach.html">Community Outreach</a>
-    <a href="missions.html">Missions Ministry</a>
-    <a href="summer.html">Summer Worship Series</a>
-    <a href="giving.html">Giving</a>
-    <a href="contact.html">Contact</a>
-  </div>
-</div>
+    <div class="dropdown">
+      <button class="dropdown-btn">Menu ☰</button>
+      <div class="dropdown-content">
+        <a href="index.html">Home</a>
+        <a href="food-pantry.html">Food Pantry</a>
+        <a href="peacecrane.html">Peace Crane Ministry</a>
+        <a href="music.html">Music Ministry</a>
+        <a href="childrens.html">Children’s Education</a>
+        <a href="volunteers.html">Worship Volunteers</a>
+        <a href="outreach.html">Community Outreach</a>
+        <a href="missions.html">Missions Ministry</a>
+        <a href="summer.html">Summer Worship Series</a>
+        <a href="giving.html">Giving</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
   </div>
 
   <div class="container">
