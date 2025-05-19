@@ -89,9 +89,9 @@
     .section {
       display: flex;
       align-items: center;
+      justify-content: space-between;
       gap: 2rem;
       margin-bottom: 3rem;
-      flex-wrap: wrap;
     }
 
     .section:nth-of-type(even) {
@@ -99,15 +99,15 @@
     }
 
     .section img {
+      width: 400px;
       max-width: 100%;
-      width: 100%;
       height: auto;
       border-radius: 10px;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
 
     .section-content {
-      flex: 1 1 400px;
+      flex: 1;
     }
 
     .section h3 {
@@ -148,14 +148,12 @@
         text-align: center;
       }
 
-      .section-content {
+      .section img {
         width: 100%;
       }
 
-      .section img {
+      .section-content {
         width: 100%;
-        max-width: 90vw;
-        height: auto;
       }
     }
   </style>
